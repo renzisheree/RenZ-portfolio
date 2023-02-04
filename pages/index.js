@@ -1,10 +1,6 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillYoutube,
-} from "react-icons/ai";
+import { AiFillFacebook, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import Pic from "next/image";
 import deved from "../public/dev-ed-wave.png";
 import design from "../public/design.png";
@@ -62,9 +58,27 @@ export default function Home() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
-            <AiFillTwitterCircle />
-            <AiFillLinkedin />
-            <AiFillYoutube />
+            <a
+              href="https://www.facebook.com/no1rennz/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <AiFillFacebook />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/thanh-luong-4417b3252/ "
+              rel="noreferrer"
+              target="_blank"
+            >
+              <AiFillLinkedin />
+            </a>
+            <a
+              href="https://github.com/renzisheree/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <AiFillGithub />
+            </a>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full  w-60 h-60 mt-20 overflow-hidden md:h-90 md:w-90 ">
             <Pic src={deved} layout="fill" objectFit="cover" />
