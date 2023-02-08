@@ -25,7 +25,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
-        <section className=" min-h-screen">
+        <section className=" min-h-screen ">
           <nav className="p-10 mb-12 flex justify-between dark:text-white">
             <h1 className="text-xl font-burtons"> Renzxje</h1>
             <ul className="flex items-center">
@@ -57,7 +57,7 @@ export default function Home() {
               needs. Join me down below and let`s get cracking!!!!
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white md:text-6xl lg:text-7x`x`xxl">
             <a
               href="https://www.facebook.com/no1rennz/"
               rel="noreferrer"
@@ -95,7 +95,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="lg:flex gap-12">
+          <div className="lg:flex gap-12 ">
             <div className="text-center  shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Pic
                 className="inline-block"
@@ -160,26 +160,41 @@ export default function Home() {
             <h3 className="text-3xl py-1 font-medium dark:text-white">
               Portofolio
             </h3>
-            <p className="py-2 text-gray-500 dark:text-white"> Hiii~! </p>
+            <p className="py-2 text-gray-500 dark:text-white">
+              {" "}
+              Here is some of my Project :{" "}
+            </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg : flex-wrap">
             <div className="basis-1/3 flex-1 ">
-              <Pic
-                src={web1}
-                className="rounded-lg object-cover"
-                width={"100"}
-                height={"100%"}
-                layout="responsive"
-              />
+              <a
+                href="https://github.com/renzisheree/RenZ-portfolio"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <Pic
+                  src={web1}
+                  className="rounded-lg object-cover"
+                  width={"100"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </a>
             </div>
             <div className="basis-1/2 flex-1 ">
-              <Pic
-                src={web2}
-                className="rounded-lg object-cover"
-                width={"100"}
-                height={"100%"}
-                layout="responsive"
-              />
+              <a
+                href="https://github.com/bablackk/cemmery-web"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <Pic
+                  src={web2}
+                  className="rounded-lg object-cover"
+                  width={"100"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </a>
             </div>
             <div className="basis-1/2 flex-1 ">
               <Pic
